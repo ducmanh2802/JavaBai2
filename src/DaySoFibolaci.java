@@ -10,7 +10,7 @@ public class DaySoFibolaci {
             System.out.println("Số đã cho không là số nguyên dương");
         }
         if (n == 1) {
-            System.out.println("Kết quả: " + n);
+            System.out.println("Kết quả: " + f0);
         }
         if (n == 2) {
             System.out.println(f0);
