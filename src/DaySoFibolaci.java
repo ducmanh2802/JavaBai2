@@ -16,8 +16,9 @@ public class DaySoFibolaci {
                 f0 = f1;
                 f1 = fn;
                 fn = f0 + f1;
+                System.out.println(fn);
             }
-            System.out.println("Kết quả: " + fn);
+            
         }
         scanner.close();
     }
