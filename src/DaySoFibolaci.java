@@ -10,25 +10,20 @@ public class DaySoFibolaci {
             System.out.println("Số đã cho không là số nguyên dương");
         }
         if (n == 1) {
-            System.out.println("Kết quả: " + f0);
+            System.out.println("Kết quả: " + f1);
         }
         if (n == 2) {
-            System.out.println(f0);
-            System.out.println(f1);
-        }
-        if (n >= 3) {
-            int count = 0;
-            System.out.println(f0);
             System.out.println(f1);
             System.out.println(fn);
-            while (count < n - 3) {
-                for (int i = 1; i <= n - 3; i++) {
-                    f0 = f1;
-                    f1 = fn;
-                    fn = f0 + f1;
-                    System.out.println(fn);
-                    count++;
-                }
+        }
+        if (n >= 3) {
+            System.out.println(f1);
+            System.out.println(fn);
+            for (int i = 1; i <= n - 2; i++) {
+                f0 = f1;
+                f1 = fn;
+                fn = f0 + f1;
+                System.out.println(fn);
             }
         }
         scanner.close();
