@@ -5,12 +5,18 @@ public class DaySoFibolaci {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập vào n: ");
         int n = scanner.nextInt();
+        int f0 = 0, f1 = 1, fn = 1;
         if (n <= 0) {
             System.out.println("Số đã cho không là số nguyên dương");
-        } else if (n == 1) {
+        }
+        if (n == 1) {
             System.out.println("Kết quả: " + n);
-        } else {
-            int f0 = 0, f1 = 1, fn = 1;
+        }
+        if (n == 2) {
+            System.out.println(f0);
+            System.out.println(f1);
+        }
+        if (n >= 3) {
             int count = 0;
             System.out.println(f0);
             System.out.println(f1);
