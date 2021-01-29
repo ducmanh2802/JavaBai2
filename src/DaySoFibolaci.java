@@ -11,17 +11,19 @@ public class DaySoFibolaci {
             System.out.println("Kết quả: " + n);
         } else {
             int f0 = 0, f1 = 1, fn = 1;
-            int count =0;
-            while(count <= n){
-                for (int i = 0; i < n; i++) {
+            int count = 0;
+            System.out.println(f0);
+            System.out.println(f1);
+            System.out.println(fn);
+            while (count < n - 3) {
+                for (int i = 1; i <= n - 3; i++) {
                     f0 = f1;
                     f1 = fn;
                     fn = f0 + f1;
                     System.out.println(fn);
-                    count ++;
+                    count++;
                 }
             }
-            
         }
         scanner.close();
     }
